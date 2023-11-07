@@ -13,6 +13,12 @@ public class HelloWorldController {
         return "helloworld-form";
     }
 
-
     // need a controller method to process the HTML form
+    // endpoint included in helloworld-form.html form annotation in th:action
+    @RequestMapping("/processForm")
+    public String processForm() {
+
+        return "helloworld";
+
+    }
 }
