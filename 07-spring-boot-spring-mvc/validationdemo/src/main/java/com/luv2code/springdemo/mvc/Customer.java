@@ -15,14 +15,14 @@ public class Customer {
 
     @Min(value=0, message="must be greater than or equal to 0")
     @Max(value=10, message="must be less than or equal to 10")
-    private int freePass;
+    private int freePasses;
 
-    public int getFreePass() {
-        return freePass;
+    public int getFreePasses() {
+        return freePasses;
     }
 
-    public void setFreePass(int freePass) {
-        this.freePass = freePass;
+    public void setFreePasses(int freePasses) {
+        this.freePasses = freePasses;
     }
 
     public String getFirstName() {
