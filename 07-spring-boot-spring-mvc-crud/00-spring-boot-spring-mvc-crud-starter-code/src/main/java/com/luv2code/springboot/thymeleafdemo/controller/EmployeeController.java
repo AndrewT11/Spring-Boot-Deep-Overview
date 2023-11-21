@@ -56,6 +56,10 @@ public class EmployeeController {
         return "employees/employee-form";
     }
 
+    @DeleteMapping("/delete")
+    // delete employee from the service
+    employeeService.
+
     @PostMapping("/save")
     public String saveEmployee(@ModelAttribute("employee") Employee theEmployee) {
         // save the employee
