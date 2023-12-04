@@ -31,7 +31,7 @@ public class StudentRestExceptionHandler {
         StudentErrorResponse error = new StudentErrorResponse();
 
         error.setStatus(HttpStatus.BAD_REQUEST.value());
-        error.setMessage((exc.getMessage()));
+        error.setMessage(("ID must be in integer form"));
         error.setTimeStamp(System.currentTimeMillis());
 
         // return ResponseEntity
